@@ -1,0 +1,15 @@
+name: Tutorials Dates
+id: 0
+dates:
+
+- date: '2024-10-20 23:59:59'
+  name: Tutorial proposals due (Anywhere on Earth time).
+
+- date: '2024-10-28 23:59:59'
+  name: Acceptance notification.
+
+- date: '2024-11-25 23:59:59'
+  name: Tutorial material/website due (Anywhere on Earth time).
+
+- date: '2024-12-08 23:59:59'
+  name: ACML tutorials.

@@ -1,0 +1,15 @@
+name: Workshops Dates
+id: 0
+dates:
+
+- date: '2024-09-13 23:59:59'
+  name: Workshop proposals due (Anywhere on Earth time)
+
+- date: '2024-09-20 23:59:59'
+  name: Acceptance notification
+
+- date: '2024-11-18 23:59:59'
+  name: Workshop material/website due (Anywhere on Earth time)
+
+- date: '2024-12-08 23:59:59'
+  name: ACML workshops

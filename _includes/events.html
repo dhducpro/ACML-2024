@@ -1,0 +1,18 @@
+<div class="events">
+{% if site.data.tracks %}
+	<b>{{ site.data.acml.deadline | markdownify }}</b>
+
+	{% assign tracks = "" | split: "" %}
+	{% for track in site.data.tracks %}
+	  {% assign tracks = tracks | push: track[1] %}
+	{% endfor %}
+	{% assign tracks = tracks | sort: "id" %}
+
+   	{% for track in tracks %}
+	<h2>{{ track.name }}</h2>
+	{% include track_events.html track=track %}
+	{% endfor %}
+{% else %}
+   <p>TBA</p>
+{% endif %}
+</div>

@@ -1,0 +1,71 @@
+main:
+  - title: "Home"
+    sublinks: 'home'
+  - title: "News"
+    url: /news/
+  - title: "Registration"
+    sublinks: 'registration'
+  - title: "Calls"
+    sublinks: 'calls'
+  - title: "Program"
+    sublinks: 'program'
+  - title: "Logistics"
+    sublinks: 'logistic'
+
+
+  - title: "Contacts"
+    url: /contact/
+
+logistic:
+  - title: "Logistics"
+    children:
+    - title: "Venues"
+      url: /logistic/venue/
+    - title: "Visa"
+      url: /logistic/visa/
+    - title: "Accommondation"
+      url: /logistic/accommondation/
+    - title: "Explore Vietnam"
+      url: /logistic/explore/
+    - title: "Dining Options"
+      url: /logistic/dining/
+
+
+program:
+  - title: "Program"
+    children:
+    - title: "Agenda"
+      url: /program/agenda/
+
+registration:
+  - title: "Registration"
+    children:
+    - title: "Registration Information"
+      url: /registration/information/
+home:
+  - title: "Home"
+    children:
+    - title: "Homepage"
+      url: ./
+    - title: "About us"
+      url: /home/about/
+    - title: "Organizing Committee"
+      url: /home/organizing-committee/
+
+
+
+calls:
+  - title: "Call For"
+    children:
+    - title: "Papers"
+      url: /calls/papers/
+    - title: "Tutorials"
+      url: /calls/tutorial/
+    - title: "Workshops"
+      url: /calls/workshops/
+    - title: "Sponsors"
+      url: /calls/sponsors_call/
+    - title: "Award Nominations"
+      url: /calls/dcna/
+
+

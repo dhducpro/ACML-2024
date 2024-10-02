@@ -1,0 +1,210 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+
+name: ACML 2024
+title: ACML 2024
+subtitle: "Asian Conference on Machine Learning"
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The Asian Conference on Machine Learning (ACML) is an international conference in the area of machine learning. It aims at providing a leading international forum for researchers in Machine Learning and related fields to share their new ideas and achievements.
+baseurl: "/2024" # the subpath of your site, e.g. /blog
+url: "http://www.acml-conf.org" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: acml-conf
+github_username:  acml-conf
+
+# Build settings
+# theme: minima
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+
+include: ["_pages"]
+exclude: ["README.md", "LICENSE.md", "Dockerfile", "example.ftp_config", "deploy.sh"]
+
+timezone: America/Los_Angeles
+
+
+###################################################
+# MINIMAL MISTAKES
+###################################################
+
+minimal_mistakes_skin: "default"
+
+logo: "/assets/images/Logo.png"
+og_image: "/assets/images/acml-logo.png"
+masthead_title: ACML 2024
+footer:
+  # links:
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     url: "https://github.com/acml-conf/acml2024"
+
+atom_feed:
+  hide: true
+
+search: false
+# paginate: 5
+
+after_footer_scripts:
+  - /assets/js/luxon.min.js
+  - /assets/js/tz-select.js
+  - /assets/js/custom.js
+
+repository: acml-conf/acml2024
+
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-08YTPYMEVR"
+    anonymize_ip: false # default
+
+
+###################################################
+# EXTRAS
+###################################################
+
+org_url: http://www.acml-conf.org/
+favicon_path: '/assets/images/favicons/'
+
+
+###################################################
+# DATAPAGE GEN
+###################################################
+
+page_gen-dirs: true
+
+page_gen:
+# _data/papers/conference
+# - data: 'papers.conference'
+#   template: 'paper/conference'
+#   name: 'paper_id'
+#   dir: 'conference/accepted-papers'
+# # _data/papers/journal
+# - data: 'papers.journal'
+#   template: 'paper/conference'
+#   name: 'paper_id'
+#   dir: 'conference/accepted-papers'
+# _data/speakers
+# - data: 'speakers'
+#   template: 'paper/conference'
+#   name: 'authors'
+#   dir: 'conference/invited-speakers'
+# # _data/tutorials
+# - data: 'tutorials'
+#   template: 'paper/tutorial'
+#   name: 'title'
+#   dir: 'tutorials'
+# # _data/program/sessions
+# - data: 'program.sessions'
+#   template: 'parallel_session'
+#   name: 'code'
+#   dir: 'conference/parallel-sessions'
+
+
+###################################################
+# DEFAULTS
+###################################################
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      show_date: true
+      read_time: true
+      comments: false
+      share: true
+      related: false
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  # _pages/calls
+  - scope:
+      path: "_pages/calls"
+      type: pages
+    values:
+      classes: wide
+      toc_sidebar: true
+      sidebar:
+        nav: "calls"
+  # _pages/participants
+  # - scope:
+  #     path: "_pages/participants"
+  #     type: pages
+  #   values:
+  #     classes: wide
+  #     toc_sidebar: true
+  #     sidebar:
+  #       nav: "participants"
+  # _pages/conference
+  # - scope:
+  #     path: "_pages/conference"
+  #     type: pages
+  #   values:
+  #     classes: wide
+  #     sidebar:
+  #       nav: "conference"
+  # _pages/oamls
+  # - scope:
+  #     path: "_pages/oamls"
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     classes: wide
+  #     header:
+  #       overlay_color: "#000"
+  #       overlay_filter: "0.5"
+  #       overlay_image: /assets/images/online-learning.jpg
+  #       caption: "Photo by [**Scott Graham**](https://unsplash.com/@homajob) on [Unsplash](https://unsplash.com/photos/5fNmWej4tAA)"
+  #     excerpt: The Online Asian Machine Learning School (OA<up>M</up>LS).
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
